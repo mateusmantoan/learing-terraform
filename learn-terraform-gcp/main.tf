@@ -1,6 +1,6 @@
 # config GCP project
 provider "google" {
-  credentials = file("/home/vagrant/tf-lab-335100-c1fb7b86cd18.json")
+  credentials = file("/home/vagrant/learning-terraform/tf-lab-335100-c1fb7b86cd18.json")
   project     = "${var.project_id}"
   region      = "${var.region}"
 }
