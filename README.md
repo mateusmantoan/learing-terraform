@@ -1,1 +1,1 @@
-# learing-terraform
+# learning-terraform
