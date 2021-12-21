@@ -1,6 +1,6 @@
 # config GCP project
 provider "google" {
-  credentials = file("/home/vagrant/learning-terraform/tf-lab-335100-c1fb7b86cd18.json")
+  credentials = file("/home/vagrant/learing-terraform/tf-lab-335100-c1fb7b86cd18.json")
   project     = "${var.project_id}"
   region      = "${var.region}"
 }
@@ -37,4 +37,8 @@ resource "google_compute_firewall" "webfirewall" {
     protocol = "tcp"
     ports = "${var.ports}"
   }
+  allow {
+    protocol = "icmp"
+  }
+  source_ranges = "${var.source_address}"
 }

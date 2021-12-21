@@ -37,3 +37,8 @@ variable "ports" {
   type = list
   default = ["80"]
 }
+
+variable "source_address" {
+  type = list
+  default = ["0.0.0.0/0"]
+}
